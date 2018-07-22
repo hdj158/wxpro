@@ -1,0 +1,88 @@
+/* pages/shangp/shangp.wxss */
+page {
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.shangb1 {
+  width: 100%;
+  height: 75vw;
+}
+.swiper {
+  width: 100%;
+  height: 75vw;
+}
+.block {
+  width: 100%;
+  height: 75vw;
+}
+.immg {
+  width: 100%;
+  height: 75vw;
+  text-align: center;
+}
+.zhongb {
+  width: 100%;
+  height: 200rpx;
+  background-color: white;
+  line-height:65rpx;
+}
+.zhongb0 {
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  color:grey;
+  line-height:100rpx;
+  border-bottom: 2rpx solid gainsboro;
+  border-top: 2rpx solid gainsboro;
+}
+.zhongb1 {
+  width: 100%;
+  height: 100rpx;
+  line-height:100rpx;
+  text-align: center;
+  color: #FB4D5E;
+  border-top: 2rpx solid gainsboro;
+  border-bottom: 2rpx solid #F16C79;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+}
+.zhongb2 {
+  width: 100%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+.immg {
+  width: 97%;
+}
+.dib {
+    color: white;
+    width: 100%;
+    position: fixed;
+    height: 100rpx;
+    bottom: 0;
+    font-size: 28rpx;
+}
+.dib01 {
+  width: 50%;
+  height: 100%;
+  position:absolute;
+  left: 0;
+  background-color: #FE3333;
+}
+.dib02 {
+  width: 50%;
+  height: 100%;
+  position:absolute;
+  right: 0;
+  background-color: #FF0000;
+}
+.nav {
+  height: 100%;
+  text-align: center;
+  line-height:100rpx;
+}
+.texts {
+  
+}

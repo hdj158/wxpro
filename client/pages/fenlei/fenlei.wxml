@@ -1,0 +1,31 @@
+<!--pages/huodong/huodong.wxml-->
+ <view class="dingb">
+ <navigator url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <image style='width: 100%;height: 300rpx;' src='../img/mmexport1532005107972.jpg' mode="scaleToFill"></image>
+     <text class='texts'>精品套装</text>
+     </navigator>
+ <navigator url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <image style='width: 100%;height: 300rpx;margin-top: 20rpx;' src='../img/mmexport1532005107972.jpg' mode="scaleToFill"></image>
+     <text class='texts'>电动牙刷</text>
+     </navigator>
+ <navigator url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <image style='width: 100%;height: 300rpx;margin-top: 20rpx;' src='../img/mmexport1532005107972.jpg' mode="scaleToFill"></image>
+     <text class='texts'>成分牙膏</text>
+     </navigator>
+     <navigator url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <image style='width: 100%;height: 300rpx;margin-top: 20rpx;' src='../img/mmexport1532005107972.jpg' mode="scaleToFill"></image>
+     <text class='texts'>成人牙刷</text>
+     </navigator>
+     <navigator url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <image style='width: 100%;height: 300rpx;margin-top: 20rpx;' src='../img/mmexport1532005107972.jpg' mode="scaleToFill"></image>
+     <text class='texts'>儿童产品</text>
+     </navigator>
+     <navigator url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <image style='width: 100%;height: 300rpx;margin-top: 20rpx;' src='../img/mmexport1532005107972.jpg' mode="scaleToFill"></image>
+     <text class='texts'>护理工具</text>
+     </navigator>
+     <navigator url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <image style='width: 100%;height: 300rpx;margin-top: 20rpx;' src='../img/mmexport1532005107972.jpg' mode="scaleToFill"></image>
+     <text class='texts'>刷头替换</text>
+     </navigator>
+</view>

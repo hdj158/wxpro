@@ -1,0 +1,2 @@
+<!--pages/zhisk/zhisk.wxml-->
+<text>{{title}}</text>

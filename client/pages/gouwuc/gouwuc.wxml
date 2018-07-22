@@ -1,0 +1,8 @@
+<!--pages/dingdan/dingdan.wxml-->
+<view class="dingb">
+     <text class='aaa iconfont icon-kong'></text>
+     <text class='texts'>\n购物车还是空的\n去挑几件中意的商品吧</text>
+ <navigator class='but1'  url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <button class="Btn">马上去逛逛</button>
+     </navigator>
+</view>

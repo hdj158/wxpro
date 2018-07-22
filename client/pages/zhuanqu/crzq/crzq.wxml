@@ -1,0 +1,11 @@
+<!--pages/zhuanqu/crzq/crzq.wxml-->
+<view class="main">
+    <view class="shangb">
+      <view class='input'>
+      <icon class='icon' type="search" size="18"/>
+      <view class="inp">
+        <input placeholder="搜索" />
+      </view>
+      </view>
+    </view>
+  </view>

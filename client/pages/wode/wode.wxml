@@ -1,0 +1,96 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 用户登录测试 -->
+    <view class="userinfo">
+        <image
+            class="userinfo-avatar"
+            src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"
+            background-size="cover"
+        ></image>
+        <view>
+            <button class="userinfo-nickname" wx:if="{{!logged}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button>
+            <text class="userinfo-nickname" wx:else>{{userInfo.nickName}}</text>
+        </view>
+    </view>
+
+
+    <view  class='aaa'>
+    <text class='texts'>我的订单</text>
+    </view>
+    <view class="dingd">
+       <view class='a'>
+     <navigator class='aa' url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <text class='tb iconfont icon-daifukuan'/>
+     <text class='texts'>\n待付款</text>
+     </navigator>
+     </view>
+        <view class='a'>
+     <navigator class='aa' url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <text class='tb iconfont icon-daifahuo'/>
+     <text class='texts'>\n待发货</text>
+     </navigator>
+     </view>
+     <view class='a'>
+     <navigator class='aa' url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <text class='tb iconfont icon-take-delivery-v2'/>
+     <text class='texts'>\n待收货</text>
+     </navigator>
+     </view>
+     <view class='a'>
+     <navigator class='aa' url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <text class='tb iconfont icon-pingjia-'/>
+     <text class='texts'>\n评价</text>
+     </navigator>
+     </view>
+     <view class='a'>
+     <navigator class='aa' url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <text class='tb iconfont icon-tuikuan'/>
+     <text class='texts'>\n退款</text>
+     </navigator>
+     </view>
+    </view>
+
+    <view class='bbb'>
+    <text class='texts'>我的钱包</text>
+    </view>
+    <view class="qianb">
+       <view class='a'>
+     <navigator class='aa' url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <text class='texts'>￥{{yue}}\n余额</text>
+     </navigator>
+     </view>
+     <view class='a'>
+     <navigator class='aa' url="../zhuanqu/crzq/crzq" open-type="navigate">
+      <text class='texts'>{{jif}}\n积分</text>
+     </navigator>
+     </view>
+     <view class='a'>
+     <navigator class='aa' url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <text class='texts'>{{youhq}}\n优惠券</text>
+     </navigator>
+     </view>
+    </view>
+  <view class='bbb'>
+    <text class='texts'>我的服务</text>
+    </view>
+    <view class="fuw">
+        <view class='a'>
+     <navigator class='aa' url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <text class='tb iconfont icon-xiaoxi1'></text>
+     <text class='texts'>\n消息</text>
+     </navigator>
+     </view>
+     <view class='a'>
+     <navigator class='aa' url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <text class='tb iconfont icon-01'></text>
+     <text class='texts'>\n收藏夹</text>
+     </navigator>
+     </view>
+     <view class='a'>
+     <navigator class='aa' url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <text class='tb iconfont icon-zititubiao20'></text>
+     <text class='texts'>\n设置</text>
+     </navigator>
+     </view>
+    </view>
+</view>

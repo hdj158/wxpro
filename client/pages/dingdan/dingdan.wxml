@@ -1,0 +1,55 @@
+<!--pages/diangdan/dingdan.wxml-->
+<view class='main'>
+  <view class='ma'>
+    <view class='a'>
+      <view class='a1'>
+      <checkbox-group bindchange="checkboxChange">
+  <label class="checkbox">
+    <checkbox value="a"/>
+  </label>
+</checkbox-group>
+      </view>
+      <view class='a2'>
+      <image style='width: 100%;height: 100%;' class='immg' mode="scaleToFill" src="../img/mmexport1532005163828.jpg"/>
+      </view>
+      <view class='a3'>
+      <text>{{content}}</text>
+      <text>\n单价：￥{{jiag}}</text>
+      <text>\n剩余：{{snums}} \t 件</text>
+      </view>
+    </view>
+    <view class='b'>
+     <view class='b1'>
+      <text>颜色</text>
+     </view>
+      <view class='b2'>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio">
+          <radio value="a"/>流光金
+        </label>
+        <label class="radio">
+          <radio value="a"/>太空银
+        </label>
+      </radio-group>
+      </view>
+    </view>
+    <view class='c'>
+      <view class='c1'>
+        <text>数量：1</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="dib" >
+    <view class='dib01'>
+      <text class='texts'>商品总价：￥ 333.00</text>
+      <text class='texts'>\n组合价：￥ 333.00</text>
+      <text class='texts' style='color: red;'>\n合计： ￥ 666.00 \t</text>
+    </view>
+    <view class='dib02'>
+    <navigator class='nav' url="">
+     <text class='texts'>确认</text>
+    </navigator>
+    </view>
+  </view>
+</view>

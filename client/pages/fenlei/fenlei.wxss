@@ -1,0 +1,10 @@
+/* pages/huodong/huodong.wxss */
+.dingb {
+  text-align:center;
+}
+.texts {
+  color: red;
+  font-size: 26rpx;
+  margin-bottom: 50rpx;
+  margin-top: 20rpx;
+}

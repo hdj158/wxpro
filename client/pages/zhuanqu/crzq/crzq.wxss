@@ -1,0 +1,28 @@
+/* pages/zhuanqu/crzq/crzq.wxss */
+.inp {
+  width: 80%;
+  height: 68rpx;
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  margin-top: 13rpx;
+}
+.icon {
+  margin-left: 30rpx;
+  margin-top: 15rpx;
+}
+.input {
+  width: 97%;
+  display: flex;
+  background-color: #F6F6F6;
+  border: 0px;
+  border-radius: 3px;
+}
+.shangb {
+  width: 100%;
+  height: 90rpx;
+  padding-top: 10rpx;
+  padding-left: 13rpx;
+  background-color: #FFF;
+  /* position: fixed;
+  z-index: 999; */
+}

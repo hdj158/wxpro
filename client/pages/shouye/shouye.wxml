@@ -1,0 +1,108 @@
+
+<view class="main">
+    <view class="shangb">
+      <view class='input'>
+      <icon class='icon' type="search" size="18"/>
+      <view class="inp">
+        <input placeholder="搜索" />
+      </view>
+      </view>
+    </view>
+
+ <view class="shangb2">
+    <icon class='iconfont icon-shengyin iii'  size="18"/>
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="1000">
+<block wx:key="index" wx:for="{{msgList}}">
+<navigator url="{{item.url}}?title={{item.title}}" open-type="navigate">
+<swiper-item>
+<view class="swiper_item">{{item.title}}</view>
+</swiper-item>
+</navigator>
+</block>
+</swiper>
+    </view>
+
+    <view class="shangb1">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block class="block" wx:key="index" wx:for="{{movies}}" wx:for-index="index">  
+        <swiper-item>  
+          <image class='immg' mode="scaleToFill" src="{{item.url}}"/>  
+        </swiper-item>  
+      </block>  
+    </swiper>
+    </view>
+
+    <view class="dingb">
+     
+    </view>
+    <view class="dingb0">
+      <view class="dingb01">
+
+      </view>
+    </view>
+
+   
+
+
+    <view class="zhongb0">
+    <navigator url="../zhuanqu/crzq/crzq" open-type="navigate">
+     <image style='width: 100%;'  src='../img/mmexport1532005140840.jpg' mode="scaleToFill"></image>
+     </navigator>
+    </view>
+
+
+
+    <view class="dib" >
+    <text class='texts iconfont icon-miaosha'>秒杀专场</text>
+    </view>
+
+<view class="zhongb0">
+<view class="schoollist0">
+  <block wx:for="{{items0}}" wx:key="item">
+    <view class="school-list0" wx:if="{{(item.countDownList.day != '00' || item.countDownList.hou != '00' || item.countDownList.min != '00' ||item.countDownList.sec != '00')}}">
+      <navigator url="/pages/shangp/shangp?id={{item.id}}&content={{item.content}}&yjiag={{item.yjiag}}&jiag={{item.jiag}}">
+        <view class="school-list-info0" index="{{index}}">
+          <image class="school-list-photo0" src="{{item.imageUrl}}"/>
+          <text class='school-list-desc3'>\n￥{{item.jiag}} \t</text>
+          <text style='text-decoration:line-through;' class='school-list-desc4'>\t ￥{{item.yjiag}}</text>
+          <text class="school-list-desc3">\n仅剩{{item.nums}}件</text>
+          <text class="school-list-desc4">\n还剩</text>
+          <text class="school-list-desc4" style='color: red;' wx:if="{{item.countDownList.day != '00'}}">{{item.countDownList.day}}</text>
+          <text class="school-list-desc4" wx:if="{{item.countDownList.day != '00'}}">天</text>
+          <text class="school-list-desc4" style='color: red;'>{{item.countDownList.hou}}</text>
+          <text class="school-list-desc4" >时</text>
+          <text class="school-list-desc4" style='color: red;'>{{item.countDownList.min}}</text>
+          <text class="school-list-desc4" >分</text>
+          <text class="school-list-desc4" style='color: red;'>{{item.countDownList.sec}}</text>
+          <text class="school-list-desc4" >秒</text>
+          <text class="school-list-desc4">\t秒杀结束</text>
+        </view>
+      </navigator>
+    </view>
+  </block>
+</view>
+</view>
+
+<view class="dib1">
+    <text>— 精品推荐 —</text>
+    </view>
+
+<view class="zhongb">
+<view class="schoollist1">
+  <block wx:for="{{items1}}" wx:key="item">
+    <view class="school-list1">
+      <navigator url="/pages/shangp/shangp?id={{item.id}}&content={{item.content}}&yjiag={{item.yjiag}}&jiag={{item.jiag}}">
+        <view class="school-list-info1" index="{{index}}">
+          <image class="school-list-photo1" src="{{item.imageUrl}}"/>
+          <text class="school-list-desc1">\n{{item.content}}</text>
+          <text class="school-list-desc2">\n{{item.nums}}</text>
+          <text class="school-list-desc3">\n￥{{item.jiag}} \t</text>
+          <text class="school-list-desc4" style='text-decoration:line-through;'>\t ￥{{item.yjiag}}</text>
+        </view>
+      </navigator>
+    </view>
+  </block>
+</view>
+</view>
+
+  </view>

@@ -1,0 +1,43 @@
+<!--pages/shangp/shangp.wxml-->
+<view class='main'>
+
+  <view class="shangb1">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block class="block" wx:key="index" wx:for="{{movies}}" wx:for-index="index">  
+        <swiper-item>  
+          <image class='immg' mode="scaleToFill" src="{{item.url}}"/>  
+        </swiper-item>  
+      </block>  
+    </swiper>
+    </view>
+    <view class="zhongb" >
+      <text class='texts'>{{content}}</text>
+      <text class='texts' style='color: red;'>\n\n￥\t {{jiag}}\t</text>
+      <text class='texts' style='text-decoration:line-through;color: grey;font-size: 25rpx;'>\t ￥{{yjiag}}</text>
+    </view>
+
+    <view class="zhongb0" >
+      <text class='texts'>快递: \t ￥ \t 10.00</text>
+    </view>
+  <view class="zhongb1" >
+      <text>详情介绍</text>
+    </view>
+    <view class="zhongb2" >
+      <view wx:key="index" wx:for="{{movies}}" wx:for-index="index">
+        <image class='immg' mode="scaleToFill" src="{{item.url}}"/> 
+      </view> 
+    </view>
+  <view class="dib" >
+    <view class='dib01'>
+    <navigator class='nav' open-type="navigate" bindtap="addgouwuc">
+      <text class='texts'>加入购物车</text>
+    </navigator>
+    </view>
+    <view class='dib02'>
+    <navigator class='nav' url="/pages/dingdan/dingdan?id={{id}}&content={{content}}&jiag={{jiag}}">
+     <text class='texts'>立即购买</text>
+    </navigator>
+    </view>
+  </view>
+
+</view>

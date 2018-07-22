@@ -1,0 +1,102 @@
+/* pages/diangdan/dingdan.wxss */
+page {
+  background-color: #EFEDED;
+}
+.ma {
+  margin-top: 20rpx;
+}
+.a {
+  width: 100%;
+  height: 20vw;
+  background-color: white;
+  border-bottom: 2rpx solid gainsboro;
+}
+.b {
+  width: 100%;
+  height: 15vw;
+  background-color: white;
+  text-align: center;
+  border-bottom: 2rpx solid gainsboro;
+}
+.b1 {
+  width: 100%;
+  height: 50%;
+  text-align: left;
+  padding-left: 10rpx;
+  background-color: white;
+}
+.b2 {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  text-align: left;
+  font-size: 26rpx;
+  color: gray;
+}
+.c {
+  width: 100%;
+  height: 10vw;
+  background-color: white;
+  line-height: 10vw;
+}
+.c1 {
+  padding-right: 20rpx;
+  float: right;
+}
+.immg {
+  width: 200rpx;
+  height: 100rpx;
+  display: block;
+}
+.a1 {
+  width: 9%;
+  height: 100%;
+  background-color: white;
+  float: left;
+  padding-left: 1vw;
+  line-height: 20vw;
+}
+.a2 {
+  width: 35%;
+  height: 100%;
+  float: left;
+  background-color: white;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: white 1px 1px 1px;
+}
+.a3 {
+  width: 55%;
+  height: 100%;
+  float: left;
+  color: grey;
+  font-size: 32rpx;
+  background-color: white;
+  overflow-y: hidden;
+}
+.dib {
+    width: 100%;
+    position: fixed;
+    height: 250rpx;
+    bottom: 0;
+    font-size: 30rpx;
+}
+.dib01 {
+  width: 100%;
+  height: 60%;
+  text-align: left;
+  overflow-y: hidden;
+  padding-top: 20rpx;
+  background-color: white;
+}
+.dib02 {
+  width: 100%;
+  height: 40%;
+  color: white;
+  background-color: #FF0000;
+}
+.nav {
+  height: 100%;
+  text-align: center;
+  line-height:100rpx;
+}
